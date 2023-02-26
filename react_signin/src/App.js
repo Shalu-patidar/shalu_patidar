@@ -8,6 +8,8 @@ import Errror from './components/Errror';
 import {Routes,Route} from "react-router-dom"
 
 
+
+
 function App() {
   return (
   <>
@@ -15,8 +17,8 @@ function App() {
     <Routes>
     
       <Route exact path='/login' element={<Login />} />
-      <Route  path='/' element={<Home />} />
-      <Route path='/details' element={<Details />} />
+      <Route exact  path='/' element={<Home />} />
+      <Route exact path='/details' element={<Details />} />
       <Route path='/*' element={<Errror />} />
     </Routes>
   </>

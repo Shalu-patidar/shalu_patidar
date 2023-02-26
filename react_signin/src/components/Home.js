@@ -12,6 +12,8 @@ const Home = () => {
 
     const history = useNavigate();
 
+    
+
     const [inpval, setInpval] = useState({
         name: "",
         email: "",
@@ -20,18 +22,18 @@ const Home = () => {
         age: "",
         companyName:""
     })
+   
 
 
-
-    const [data,setData] = useState([]);
+    const [data] = useState([]);
     console.log(inpval);
 
     const getdata = (e) => {
-        // console.log(e.target.value);
+        //console.log(e.target.value);
 
 
         const { value, name } = e.target;
-        // console.log(value,name);
+        //console.log(value,name);
 
 
         setInpval(() => {
@@ -85,6 +87,7 @@ const Home = () => {
         
         }
         
+        
         else {
             console.log("data added succesfully");
             history("/login")
@@ -93,7 +96,7 @@ const Home = () => {
         }
 
     }
-
+  
     return (
         <>
             <div className="container mt-3">
