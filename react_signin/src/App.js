@@ -16,8 +16,8 @@ function App() {
     <Header />
     <Routes>
     
-      <Route exact path='/login' element={<Login />} />
-      <Route exact  path='/' element={<Home />} />
+      <Route exact path='/login' element={<Home />} />
+      <Route exact  path='/' element={<Login />} />
       <Route exact path='/details' element={<Details />} />
       <Route path='/*' element={<Errror />} />
     </Routes>

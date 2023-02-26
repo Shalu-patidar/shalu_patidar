@@ -38,7 +38,7 @@ const Login = () => {
 
     const addCreateData=(e)=>{
         e.preventDefault();
-        history("/")
+        history("/login")
     }
 
     const addData = (e) => {
@@ -72,7 +72,8 @@ const Login = () => {
                     return el.email === email && el.password === password
                 });
                
-                if (userlogin.length===0 && userdata.password!==password && userdata.email!==email) {
+                if (userlogin.length===0 && userdata.password!==password && userdata.email!==email ) {
+                   
                     history("/*")
                   }
                 else {

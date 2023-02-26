@@ -49,6 +49,11 @@ const Details = () => {
         history("/login");
     }
 
+    const userRemove=()=>{
+        localStorage.removeItem("user_login")
+        history("/")
+    }
+
     useEffect(() => {
         Birthday();
     }, [])
@@ -75,6 +80,7 @@ const Details = () => {
                        </table>
                         
                         <Button className='m-5' onClick={userlogout} >Remove Account</Button>
+                        <Button className='m-5' onClick={userRemove} >Logout</Button>
 
                 {
                     logindata[0].date === todayDate ? 

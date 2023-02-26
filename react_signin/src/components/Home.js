@@ -90,7 +90,7 @@ const Home = () => {
         
         else {
             console.log("data added succesfully");
-            history("/login")
+            history("/")
             localStorage.setItem("useryoutube",JSON.stringify([...data,inpval]));
 
         }
@@ -137,7 +137,7 @@ const Home = () => {
                                 Submit
                             </Button>
                         </Form>
-                        <p className='mt-3'>Already Have an Account <span><NavLink to="/login">SignIn</NavLink></span> </p>
+                        <p className='mt-3'>Already Have an Account <span><NavLink to="/">SignIn</NavLink></span> </p>
                     </div>
                     <SIgnin />
                 </section>
