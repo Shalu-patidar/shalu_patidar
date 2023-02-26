@@ -82,7 +82,8 @@ const Details = () => {
                         <Button className='m-5' onClick={userlogout} >Remove Account</Button>
                         <Button className='m-5' onClick={userRemove} >Logout</Button>
 
-                {
+                
+                        {
                     logindata[0].date === todayDate ? 
                     <Modal show={show} onHide={handleClose}>
                             <Modal.Header closeButton>
@@ -99,7 +100,6 @@ const Details = () => {
                             </Modal.Footer>
                         </Modal>:""
                 }   
-
                     </>
             }
         </>
@@ -107,8 +107,3 @@ const Details = () => {
 }
 
 export default Details
-
-
-
-
-
